@@ -21,15 +21,15 @@ Route::get('/', function () {
         'films' => [
             [
               'url' => '/film1',
-              'nome' => "The Conjuring - L'Evocazione",
+              'titolo' => "The Conjuring - L'Evocazione",
             ],
             [
               'url' => '/film2',
-              'nome' => "The Conjuring - Il caso Enfield",
+              'titolo' => "The Conjuring - Il caso Enfield",
             ],
             [
               'url' => '/film3',
-              'nome' => "The Conjuring - Per ordine del diavolo",
+              'titolo' => "The Conjuring - Per ordine del diavolo",
             ],
           ]
     ];
