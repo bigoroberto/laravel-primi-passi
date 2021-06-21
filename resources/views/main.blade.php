@@ -16,10 +16,13 @@
   @endif
 
   <span>>Clicca per scoprire i dettagli dei film</span>
-  <ul>
+{{--   <ul>
     <li><h2><a href="/film1">The Conjuring - L'Evocazione</a></h2></li>
     <li><h2><a href="/film2">The Conjuring - Il caso Enfield</a></h2></li>
     <li><h2><a href="/film3">The Conjuring - Per ordine del Diavolo</a></h2></li>
-  </ul>
+  </ul> --}}
+  @foreach($films as $film) 
+  <li><h2><a href="{{$film['url']}}">{{$film['titolo']}}</a></h2></li>
+@endforeach
 </body>
 </html>
