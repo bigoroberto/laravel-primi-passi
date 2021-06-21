@@ -18,20 +18,30 @@ Route::get('/', function () {
         'name' => 'Vera',
         'lastname' => 'Farmiga',
         'interpretes' => 'Lorraine Warren',
-        'films'=>[
-            'titolo' => ["The Conjuring - L'Evocazione","The Conjuring - Il caso Enfield","The Conjuring - Per ordine del diavolo"],
-            'url' => ['/film1','/film2','/film3'],
-        ]
+        'films' => [
+            [
+              'url' => '/film1',
+              'nome' => "The Conjuring - L'Evocazione",
+            ],
+            [
+              'url' => '/film2',
+              'nome' => "The Conjuring - Il caso Enfield",
+            ],
+            [
+              'url' => '/film3',
+              'nome' => "The Conjuring - Per ordine del diavolo",
+            ],
+          ]
     ];
     return view('main', $data);
 });
 
 Route::get('/film1', function () {
     $data=[
-   /*      'films'=>[
+        'films'=>[
             'titolo' => "The Conjuring - L'Evocazione",
             'url' => '/film1',
-        ], */
+        ], 
         'copertina' => 'https://ilgeniodellostreaming.voto/wp-content/uploads/2019/03/The-Conjuring-Levocazione-1.jpg.webp',
         'casts' => ["Patrick Wilson,","Vera Farmiga"],
         'interpretes' => ["Ed Warren,","Lorraine Warren."],
@@ -44,10 +54,10 @@ Route::get('/film1', function () {
 
 Route::get('/film2', function () {
     $data=[
-  /*       'films'=>[
+        'films'=>[
             'titolo' => "The Conjuring - Il caso Enfield",
             'url' => '/film2',
-        ], */
+        ],
         'copertina' => 'https://ilgeniodellostreaming.voto/wp-content/uploads/2016/10/The-Conjuring-2-Il-Caso-Enfield.jpg.webp',
         'casts' => ["Patrick Wilson,","Vera Farmiga"],
         'interpretes' => ["Ed Warren,","Lorraine Warren."],
@@ -60,10 +70,10 @@ Route::get('/film2', function () {
 
 Route::get('/film3', function () {
     $data=[
-/*         'films'=>[
+        'films'=>[
             'titolo' => "The Conjuring - Per ordine del diavolo",
             'url' => '/film3',
-        ], */
+        ],
         'copertina' => 'https://ilgeniodellostreaming.voto/wp-content/uploads/2021/06/The-Conjuring-3-Per-ordine-del-diavolo.jpg.webp',
         'casts' => ["Patrick Wilson,","Vera Farmiga"],
         'interpretes' => ["Ed Warren,","Lorraine Warren."],
