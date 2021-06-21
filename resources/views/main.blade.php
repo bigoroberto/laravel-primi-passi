@@ -17,9 +17,9 @@
 
   <span>>Clicca per scoprire i dettagli dei film</span>
   <ul>
-    <li><h2><a href="/dettaglio1">The Conjuring - L'Evocazione</a></h2></li>
-    <li><h2><a href="/dettaglio2">The Conjuring - Il caso Enfield</a></h2></li>
-    <li><h2><a href="/dettaglio3">The Conjuring - Per ordine del Diavolo</a></h2></li>
+    <li><h2><a href="/film1">The Conjuring - L'Evocazione</a></h2></li>
+    <li><h2><a href="/film2">The Conjuring - Il caso Enfield</a></h2></li>
+    <li><h2><a href="/film3">The Conjuring - Per ordine del Diavolo</a></h2></li>
   </ul>
 </body>
 </html>
